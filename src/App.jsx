@@ -13,6 +13,7 @@ import { Badge } from "@/components/ui/badge"
 
 import Header from './components/Header'
 import Sidebar from './components/Sidebar';
+import Dashboard from './components/Dashboard';
 import UserManagement from './components/UserManagement';
 import PublisherManagement from './components/PublisherManagement';
 import Notifications from './components/Notifications';
@@ -101,7 +102,8 @@ export function Component() {
         </header>
         <main className="flex flex-1 flex-col gap-4 p-4 md:gap-8 md:p-6">
          <Routes>
-            <Route path="/" element={ <UserManagement/>}></Route>
+            <Route path="/" element={ <Dashboard/>}></Route>
+            <Route path="/reader-management" element={ <UserManagement/>}></Route>
             <Route path="/publisher-management" element={<PublisherManagement/>}></Route>
             <Route path="/book-upload-requests" element={<BookUploadRequests/>}></Route>
             <Route path="/notifications" element={<Notifications/>}></Route>
