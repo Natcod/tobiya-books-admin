@@ -7,7 +7,7 @@ const UserProfile = ({ user, setViewingUser }) =>{
     <div className="mx-auto max-w-md px-4 py-8 sm:px-6 lg:px-8">
       <div className="flex items-center space-x-4">
         <Avatar className="h-16 w-16">
-          <AvatarImage alt="User Avatar" src="/placeholder-user.jpg" />
+          <AvatarImage alt="Reader Avatar" src="/placeholder-user.jpg" />
           <AvatarFallback>JP</AvatarFallback>
         </Avatar>
         <div>
@@ -29,7 +29,7 @@ const UserProfile = ({ user, setViewingUser }) =>{
         <h3 className="text-lg font-medium">Address</h3>
         <p className="text-gray-500 dark:text-gray-400">123 Main Street, Anytown USA 12345</p>
       </div>
-      <Button onClick={() => setViewingUser(null)}>Back to User Management</Button>
+      <Button onClick={() => setViewingUser(null)}>Back to Reader Management</Button>
     </div>
   )
 }
